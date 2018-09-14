@@ -1,0 +1,71 @@
+2018-09-07 18:09:19,940 ERROR: Exception on /edit_profile [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/routes.py", line 92, in edit_profile
+    form = EditProfileForm(original_username=current_user.username)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/wtforms/form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/forms.py", line 38, in __init__
+    super(EditProfileForm, self.__init__(*args, **kwargs))
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2018-09-07 18:09:25,529 ERROR: Exception on /edit_profile [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/routes.py", line 92, in edit_profile
+    form = EditProfileForm(original_username=current_user.username)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/wtforms/form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/forms.py", line 38, in __init__
+    super(EditProfileForm, self.__init__(*args, **kwargs))
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2018-09-07 18:09:34,848 INFO: Blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/blog.py:28]
+2018-09-07 18:09:40,307 ERROR: Exception on /edit_profile [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/routes.py", line 92, in edit_profile
+    form = EditProfileForm(original_username=current_user.username)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/wtforms/form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/forms.py", line 38, in __init__
+    super(EditProfileForm, self.__init__(*args, **kwargs))
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2018-09-07 18:11:05,596 INFO: Blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/blog.py:28]
