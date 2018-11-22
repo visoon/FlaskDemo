@@ -1,4 +1,4 @@
-2018-11-22 17:14:29,653 ERROR: Exception on / [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-11-20 18:39:00,165 ERROR: Exception on / [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -43,22 +43,22 @@ Traceback (most recent call last):
   File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/base/base.html", line 49, in block "content"
     {% block app_content %}
   File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/index.html", line 11, in block "app_content"
-    {% include 'base/_post.html' %}
-  File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/base/_post.html", line 9, in top-level template code
-    <a href="{{ url_for('mian.userprofile', username=post.author.username) }}">
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
-    force_external=external)
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'mian.userprofile' with values ['username']. Did you mean 'main.userprofile' instead?
-2018-11-22 17:14:52,093 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
-2018-11-22 17:16:17,439 ERROR: Exception on /index [POST] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+    {% include 'base._post.html' %}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base._post.html
+2018-11-20 18:41:21,003 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-20 18:41:38,106 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-20 18:42:07,562 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-20 18:42:36,892 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-20 18:43:02,780 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-20 18:43:12,263 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-20 18:43:29,293 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-22 17:11:08,568 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-22 17:12:20,212 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-22 17:12:21,350 ERROR: Exception on / [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -74,18 +74,21 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/Users/xuci/Documents/workspace-python/flask-blog/app/main/routes.py", line 36, in index
-    return redirect(url_for('index'))
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
-    force_external=external)
-  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
-2018-11-22 17:17:21,300 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
-2018-11-22 17:18:46,863 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/main/routes.py", line 43, in index
+    return render_template('main/index.html', title='Home Page', form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: main/index.html
+2018-11-22 17:12:42,029 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]

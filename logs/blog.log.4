@@ -1,0 +1,90 @@
+2018-11-20 18:37:30,213 ERROR: Exception on / [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/main/routes.py", line 43, in index
+    return render_template('index.html', title='Home Page', form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+2018-11-20 18:37:57,867 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
+2018-11-20 18:37:59,371 ERROR: Exception on / [GET] [in /Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/main/routes.py", line 43, in index
+    return render_template('index.html', title='Home Page', form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/base/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/base/base.html", line 49, in block "content"
+    {% block app_content %}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/app/templates/index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/xuci/Documents/workspace-python/flask-blog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: _post.html
+2018-11-20 18:38:58,379 INFO: blog startup [in /Users/xuci/Documents/workspace-python/flask-blog/app/__init__.py:45]
