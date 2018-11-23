@@ -2,7 +2,7 @@ from app import create_app, db
 from app.main.models import User, Post
 
 app = create_app()
-app.run()
+# app.run()
 
 
 @app.shell_context_processor
